@@ -14,6 +14,7 @@ Source0:	https://files.pythonhosted.org/packages/04/d3/c19d65ae67636fe63953b20c2
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(pip)
 
 %description
 A small C++ header library which makes it easier to write Python
