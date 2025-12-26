@@ -2,7 +2,7 @@
 %define debug_package %nil
 
 Name:             python-tzlocal
-Version:          5.2
+Version:          5.3.1
 Release:          1
 
 Summary:          A Cassowary constraint solving algorithm
@@ -12,8 +12,8 @@ Group:            Development/Python
 URL:              https://pypi.org/project/tzlocal/
 Source0:	https://files.pythonhosted.org/packages/04/d3/c19d65ae67636fe63953b20c2e4a8ced4497ea232c43ff8d01db16de8dc0/%{pypi_name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(python3)
-BuildRequires:	python3egg(setuptools)
-BuildRequires:	python3dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 
 %description
 A small C++ header library which makes it easier to write Python
