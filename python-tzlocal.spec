@@ -2,7 +2,7 @@
 %define debug_package %nil
 
 Name:             python-tzlocal
-Version:          5.3.1
+Version:          5.4.4
 Release:          1
 
 Summary:          A Cassowary constraint solving algorithm
@@ -24,7 +24,7 @@ handles reference counting and provides convenience methods for
 performing common object operations.
 
 %prep
-%autosetup -p1 -n %{pypi_name}-%{version}
+%autosetup -p1 -n tzlocal-5.4.4
 # Remove bundled egg-info
 #rm -rf %{pypi_name}.egg-info
 
