@@ -3,7 +3,7 @@
 
 Name:             python-tzlocal
 Version:          5.4.4
-Release:          1
+Release:          2
 
 Summary:          A Cassowary constraint solving algorithm
 License:          BSD
@@ -29,6 +29,9 @@ performing common object operations.
 #rm -rf %{pypi_name}.egg-info
 
 %build
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
+
 %py3_build
 
 
